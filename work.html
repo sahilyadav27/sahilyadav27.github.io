@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Sahil Yadav</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1 class="site-name"><a href="index.html">Sahil Yadav</a></h1>
+<nav>
+<a href="index.html">About</a>
+<span class="here">Work</span>
+<a href="research.html">Research</a>
+<a href="projects.html">Projects</a>
+<a href="papers.html">Papers</a>
+<a href="resume.pdf">CV</a>
+</nav>
+</header>
+<hr>
+
+<h2>Zepto</h2>
+<p class="note">Data Scientist, 2023&ndash;present (Senior since 2026).</p>
+
+<p>
+I joined Zepto in 2023 and now work as a senior data scientist. The company runs on dark
+stores: small, dense warehouses built for one purpose, to put an order at your door in
+about ten minutes. Almost everything interesting about the business follows from that
+promise, and most of my work is one version of the same question, asked at the scale of a
+country: how do you keep the right things in the right place at the right time, without
+drowning in inventory or cost?
+</p>
+
+<h3>Forecasting and replenishment</h3>
+<p>
+Quick commerce is a forecasting problem wearing a logistics costume. If you know what each
+store will sell tomorrow, most other decisions get easier. I built a demand-forecasting
+engine for fast-moving consumer goods, around gradient-boosted trees, that now sits beneath
+buying and inter-store transfer decisions; it cut forecast error by about 5% and bias by
+around 10%, which counts for most during festivals and promotions, when demand stops
+behaving. For Zepto Café, the prepared-food line, I tied forecasting and replenishment into
+a single loop that lifted product availability from 85% to 93% while keeping waste in check.
+</p>
+
+<h3>Routing and logistics</h3>
+<p>
+Goods have to move from large warehouses to dark stores on a schedule, in trucks, under
+constraints that do not care about elegant mathematics: vehicle capacities, store hours,
+loading windows. I wrote this down as a mixed-integer program and built a routing-and-batching
+system around it that took roughly ₹5 crore a month out of line-haul costs. A good part of
+the work was less about the solver and more about stating the constraints honestly.
+</p>
+
+<h3>Assortment</h3>
+<p>
+A dark store has limited shelf space, so every product it stocks is a product it chose not
+to stock instead. I work on the models behind that choice: an assortment engine that reads
+search-to-purchase signals, SKU performance, social trends, and what competitors are doing,
+to catch demand that is forming before it shows up in the sales numbers. More recently I
+have been designing assortment optimisation end to end, weighing the hard ceiling of store
+capacity against the softer goal of giving customers what they actually came for.
+</p>
+
+<h2>Earlier</h2>
+
+<h3>Pixis &middot; 2021&ndash;22</h3>
+<p>
+Before Zepto, I built a relevance model at Pixis to rank YouTube videos and channels for
+advertisers, so that a brand's spend landed next to content that genuinely fit it.
+</p>
+
+<h3>Zepto, as an intern &middot; 2022</h3>
+<p>
+I first came to Zepto as an intern, where I wrote a surge-pricing model using a PID
+controller, the same idea that holds a thermostat steady, to balance delivery fees against
+rider load. Rather than pricing by rule of thumb, it worked backwards from a target order
+value.
+</p>
+
+</body>
+</html>
